@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a8e99b2-e893-40fc-aa44-8e94d6de99d4" name="Changes" comment="finish registry form">
-      <change afterPath="$PROJECT_DIR$/women/templates/women/login.html" afterDir="false" />
+    <list default="true" id="5a8e99b2-e893-40fc-aa44-8e94d6de99d4" name="Changes" comment="add user login mvt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coolsite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/coolsite/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/women/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/women/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/women/templates/women/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/women/templates/women/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/women/templates/women/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/women/templates/women/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coolsite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/coolsite/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/women/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/women/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/women/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/women/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/women/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/women/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664034777273</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add user login mvt">
+      <created>1664045120451</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664045120451</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -96,6 +101,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update registry" />
     <MESSAGE value="finish registry form" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish registry form" />
+    <MESSAGE value="add user login mvt" />
+    <option name="LAST_COMMIT_MESSAGE" value="add user login mvt" />
   </component>
 </project>

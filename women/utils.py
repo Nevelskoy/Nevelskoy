@@ -1,6 +1,7 @@
 from django.db.models import Count
 
 from .models import *
+from django.core.cache import cache
 
 menu = [{'title': "О сайте", 'url_name': 'about'},
         {'title': "Добавить статью", 'url_name': 'add_page'},
@@ -8,10 +9,13 @@ menu = [{'title': "О сайте", 'url_name': 'about'},
         ]
 
 class DataMixin:
-    paginate_by = 3
+    paginate_by = 5
     def get_user_context(self, **kwargs):
         context = kwargs
-        cats = Category.objects.all()
+        cats = cache.get('cats')            # кэширование следует включать только на конечном этапе разработки, чтобы мы могли отслеживать все нагрузки, возникающие в процессе отладки
+        if not cats:
+            cats = Category.objects.all()
+            cache.set('cats', cats, 60)
         #cats = Category.objects.annotate(Count('women')) #annotate Count - из ORM позволяет получить количество постов в данной рубрике
 
         # отключаем пункт меню Добавить статью, для неавторизованных пользователей
